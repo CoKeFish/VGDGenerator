@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="VHDGenerator" />
+		<Option title="Borrar" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/VHDGenerator" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/Borrar" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -16,24 +16,10 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/VHDGenerator" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/Borrar" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-O2" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
-			</Target>
-			<Target title="VHDG">
-				<Option output="bin/VHDG/VHDGenerator" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="" />
-				<Option object_output="obj/VHDG/" />
-				<Option type="2" />
-				<Option compiler="gcc" />
-				<Option createDefFile="1" />
 				<Compiler>
 					<Add option="-O2" />
 				</Compiler>
@@ -46,15 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="GenerateC.cpp" />
-		<Unit filename="GenerateC.h" />
-		<Unit filename="VHDG.cpp" />
-		<Unit filename="VHDG.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
 			<debugger />
+			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

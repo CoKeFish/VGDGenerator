@@ -1,4 +1,28 @@
 # depslib dependency file v1.0
-1514140574 source:c:\users\omen\desktop\vhdg\vhdgenerator\main.cpp
+1580009185 source:c:\users\omen\desktop\vhdg\vhdgenerator\main.cpp
 	<iostream>
+	"VHDG.h"
+	"GenerateC.h"
+
+1579978547 source:c:\users\omen\desktop\vhdg\vhdgenerator\vhdg.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+	"GenerateC.h"
+
+1579976642 c:\users\omen\desktop\vhdg\vhdgenerator\vhdg.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+
+1580009132 source:c:\users\omen\desktop\vhdg\vhdgenerator\generatec.cpp
+	<iostream>
+	<dirent.h>
+	<string>
+	<cstring>
+
+1580009146 c:\users\omen\desktop\vhdg\vhdgenerator\generatec.h
 

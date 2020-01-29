@@ -3,8 +3,13 @@
 #include <dirent.h>
 #include <string>
 #include <cstring>
+#include <fstream>
 
 using namespace std;
+
+void headGenerate(ofstream &archivo);
+
+
 void error(const char *s)
 {
     /* perror() devuelve la cadena S y el error (en cadena de caracteres) que tenga errno */
@@ -46,8 +51,8 @@ bool GetNameComponent(string &Name)
     /* Obtenemos el nombre del usuario */
     string Compo;
     getline(cin, Compo);
-    /* Contatenamos con la extencion */
-    Compo = (Compo + ".cpp");
+    /* Concatenamos con la extencion */
+    Compo = (Compo + ".vhd");
     /* Devolvemos 1 si se ha obtenido correctamente el nombre */
     if(checkFilesExist(Compo))
     {
@@ -63,14 +68,33 @@ void ConfProgram()
 
 }
 
-void NewOpenArch()
+void NewOpenArch(ofstream &archivo)
 {
+    string Name;
 
+    if(GetNameComponent(Name))
+        archivo.open(Name, ios::out);
 }
 
-void headGenerate()
+void mainGen()
 {
+    ofstream archivo;
+    NewOpenArch(archivo);
+    headGenerate(archivo);
+    archivo.close();
+}
 
+void headGenerate(ofstream &archivo)
+{
+    archivo << endl;
+    archivo << "--******************************************************--" << endl;
+    archivo << "--        PONTIFICIA UNIVERSIDAD JAVERIANA              --" << endl;
+    archivo << "--                Disegno Digital                       --" << endl;
+    archivo << "--              PROYECTO CAJA FUERTE                    --" << endl;
+    archivo << "-- 							                            --" << endl;
+    archivo << "-- Titulo :    Sumador Decimal digito		            --" << endl;
+    archivo << "-- Fecha  :  	D:01 M:10 Y:2019                        --" << endl;
+    archivo << "--******************************************************--" << endl;
 }
 
 void Generate_Counter(int time, bool secons)

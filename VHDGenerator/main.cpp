@@ -17,9 +17,7 @@ ObjMenu Main[] =
 
 int main()
 {
-    string Name;
-    GetNameComponent(Name);
-    cout << Name;
+    mainGen();
     //int Main_Length = GetSize(Main);
     //MainMenu(Main, Main_Length);
     //GetMainMenu();
